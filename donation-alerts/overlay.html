@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="overlay.css">
+    <title>Donation Alert</title>
+</head>
+<body>
+    <div id="alert" class="hidden">
+        <div class="box">
+            <span class="icon">💰</span>
+            <span class="text">
+                <span class="name"></span> donated <span class="amt"></span>!
+            </span>
+        </div>
+    </div>
+    <script>
+        // Demo: Show alert after 2 seconds
+        setTimeout(() => {
+            document.querySelector(".name").textContent = "CoolViewer";
+            document.querySelector(".amt").textContent = "$5.00";
+            document.getElementById("alert").classList.remove("hidden");
+        }, 2000);
+    </script>
+</body>
+</html>
